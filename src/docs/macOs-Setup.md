@@ -4,8 +4,8 @@
 
 ## MacOS Set Up
 
-1. Open **UCLAX-WEB1-Starter** in **VS Code**
-2. Open VS Code terminal `Menu > Terminal > New Terminal`
+1. With **UCLAX-WEB1-Starter** open in **VS Code**
+2. Open **VS Code** terminal `Menu > Terminal > New Terminal`
 3. Run the following command: `make macOs.install`
 
 This is going to install a series of applications needed for this course
