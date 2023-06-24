@@ -1,25 +1,16 @@
 #!/bin/bash
 
+osTitle="MacOS:"
+
 __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Shared Pre Install
 source "${__dir}/shared.install.pre.sh"
 
-childScriptTitle="MacOS:"
+echo "$scriptTitle Start"
 
-echo "$globalScriptTitle $childScriptTitle Start"
-
-###################
-# Working Directory
-###################
-echo "$globalScriptTitle $childScriptTitle Switch to Desktop working directory."
-
-cd ~/Desktop
-
-###################
 # Homebrew
-###################
-echo "$globalScriptTitle $childScriptTitle Install or Update Homebrew"
+echo "$scriptTitle Install or Update Homebrew"
 
 which -s brew
 if [[ $? != 0 ]] ; then
@@ -30,10 +21,8 @@ else
     brew update
 fi
 
-###################
 # Zsh
-###################
-echo "$globalScriptTitle $childScriptTitle Install Zsh"
+echo "$scriptTitle Install Zsh"
 
 if [ -n "`$SHELL -c 'echo $ZSH_VERSION'`" ]; then
     echo "ZSH is already installed."
@@ -47,10 +36,8 @@ else
     chsh -s /usr/local/bin/zsh
 fi
 
-###################
 # Oh My Zsh
-###################
-echo "$globalScriptTitle $childScriptTitle Install Oh-My-Zsh"
+echo "$scriptTitle Install Oh-My-Zsh"
 
 if [ -d ~/.oh-my-zsh ]; then
     echo "Oh-My-Zsh Already installed"
@@ -59,10 +46,8 @@ else
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 fi
 
-###################
 # Update .zshrc with app specific tools
-###################
-echo "$globalScriptTitle $childScriptTitle Configuring Bash Profiles"
+echo "$scriptTitle Configuring Bash Profiles"
 
 # NVM Support
 if grep -q NVM_DIR ~/.zshrc; then
@@ -79,10 +64,8 @@ echo -e "# VS Code code command\nexport PATH=\"\$PATH:/Applications/Visual Studi
 # Manual sourcing of VS Code code command
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/opt/homebrew/bin"
 
-###################
-# Install the rest of the Apps we need.
-###################
-echo "$globalScriptTitle $childScriptTitle Install Node Version Manager (NVM)"
+# NVM
+echo "$scriptTitle Install Node Version Manager (NVM)"
 
 if [[ -f $HOME/.nvm/nvm.sh ]] ; then
     echo "NVM already Installed"
@@ -102,7 +85,7 @@ echo "NVM: Make Node Version 18 the default"
 nvm alias default 18.12.1
 
 # Google Chrome
-echo "$globalScriptTitle $childScriptTitle Install Google Chrome"
+echo "$scriptTitle Install Google Chrome"
 
 if [ -d "/Applications/Google Chrome.app" ]; then
     echo "Google Chrome Already installed"
@@ -110,7 +93,6 @@ else
     echo "Install Google Chrome"
     brew install google-chrome
 fi
-
 
 # Shared Post Install
 source "${__dir}/shared.install.post.sh"

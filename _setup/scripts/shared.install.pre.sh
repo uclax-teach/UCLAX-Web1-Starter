@@ -17,7 +17,7 @@ fi
 # Props
 ###################
 courseName="UCLAX-Web1"
-globalScriptTitle="$courseName Setup:"
+scriptTitle="$courseName Setup: $osTitle"
 
 
 ###################
@@ -40,7 +40,7 @@ function toTitleCase {
 ###################
 # Capture User Details in bash prompt
 ###################
-echo "$globalScriptTitle User specific settings"
+echo "$scriptTitle User specific settings"
 
 read -p "Enter your First Name: " userfirstname
 ufname=$(toTitleCase $userfirstname)
@@ -51,4 +51,4 @@ ulname=$(toTitleCase $userlastname)
 read -p "Enter your Email: " useremail
 uemail=$(toLowerCase $useremail)
 
-echo "$globalScriptTitle User Details: Name: $ufname $ulname, Email: $uemail attending $courseName"
+echo "$scriptTitle User Details: Name: $ufname $ulname, Email: $uemail attending $courseName"
