@@ -11,10 +11,7 @@
     - Set up your Linux username and password
     - Set up Windows Terminal
 
-#### Notes
-
-**VS Code with WSL**
-Apparently windows has added a lot of support for WSL, which you may want to explore <a href="https://learn.microsoft.com/en-us/windows/wsl/setup/environment#use-visual-studio-code" target="UseWSL">here</a>.
+**Note: VS Code with WSL** Apparently windows has added a lot of support for WSL, which you may want to explore <a href="https://learn.microsoft.com/en-us/windows/wsl/setup/environment#use-visual-studio-code" target="UseWSL">here</a>.
 
 ### Install Apps
 
