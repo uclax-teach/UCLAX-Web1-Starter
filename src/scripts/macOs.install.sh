@@ -1,73 +1,25 @@
 #!/bin/bash
 
-# We don't need return codes for "$(command)", only stdout is needed.
-# Allow `[[ -n "$(command)" ]]`, `func "$(command)"`, pipes, etc.
-# shellcheck disable=SC2312
+__dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# set -u
+# Shared Pre Install
+source "${__dir}/shared.install.pre.sh"
 
-abort() {
-    printf "%s\n" "$@"
-    exit 1
-}
+childScriptTitle="MacOS:"
 
-# Fail fast with a concise message when not using bash
-# Single brackets are needed here for POSIX compatibility
-# shellcheck disable=SC2292
-if [ -z "${BASH_VERSION:-}" ]
-then
-    abort "Bash is required to interpret this script."
-fi
-
-###################
-# Init
-###################
-
-echo "MacOS Web Essentials: Start"
-
-function wordUpperCaseFirst {
-    echo $(tr '[:lower:]' '[:upper:]' <<< ${1:0:1})${1:1}
-}
-
-function toLowerCase {
-    tr [:upper:] [:lower:] <<< "${*}"
-}
-
-function toTitleCase {
-    lowercase=$(toLowerCase $1)
-    title=$(wordUpperCaseFirst $lowercase)
-    echo $title
-}
+echo "$globalScriptTitle $childScriptTitle Start"
 
 ###################
 # Working Directory
 ###################
-echo "MacOS Web Essentials: Switch to Desktop working directory."
+echo "$globalScriptTitle $childScriptTitle Switch to Desktop working directory."
 
 cd ~/Desktop
 
 ###################
-# Capture User Details in bash prompt
-###################
-echo "MacOS Web Essentials: User specific settings"
-
-courseName="UCLAX-Web1"
-
-read -p "Enter your First Name: " userfirstname
-ufname=$(toTitleCase $userfirstname)
-
-read -p "Enter your Last Name: " userlastname
-ulname=$(toTitleCase $userlastname)
-
-read -p "Enter your Email: " useremail
-uemail=$(toLowerCase $useremail)
-
-echo "User Details: Name: $ufname $ulname, Email: $uemail attending $courseName"
-
-###################
 # Homebrew
 ###################
-echo "MacOS Web Essentials: Install or Update Homebrew"
+echo "$globalScriptTitle $childScriptTitle Install or Update Homebrew"
 
 which -s brew
 if [[ $? != 0 ]] ; then
@@ -81,7 +33,7 @@ fi
 ###################
 # Zsh
 ###################
-echo "MacOS Web Essentials: Install Zsh"
+echo "$globalScriptTitle $childScriptTitle Install Zsh"
 
 if [ -n "`$SHELL -c 'echo $ZSH_VERSION'`" ]; then
     echo "ZSH is already installed."
@@ -98,7 +50,7 @@ fi
 ###################
 # Oh My Zsh
 ###################
-echo "MacOS Web Essentials: Install Oh-My-Zsh"
+echo "$globalScriptTitle $childScriptTitle Install Oh-My-Zsh"
 
 if [ -d ~/.oh-my-zsh ]; then
     echo "Oh-My-Zsh Already installed"
@@ -110,7 +62,7 @@ fi
 ###################
 # Update .zshrc with app specific tools
 ###################
-echo "MacOS Web Essentials: Configuring Bash Profiles"
+echo "$globalScriptTitle $childScriptTitle Configuring Bash Profiles"
 
 # NVM Support
 if grep -q NVM_DIR ~/.zshrc; then
@@ -130,7 +82,7 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 ###################
 # Install the rest of the Apps we need.
 ###################
-echo "MacOS Web Essentials: Install Node Version Manager (NVM)"
+echo "$globalScriptTitle $childScriptTitle Install Node Version Manager (NVM)"
 
 if [[ -f $HOME/.nvm/nvm.sh ]] ; then
     echo "NVM already Installed"
@@ -150,7 +102,7 @@ echo "NVM: Make Node Version 18 the default"
 nvm alias default 18.12.1
 
 # Google Chrome
-echo "MacOS Web Essentials: Install Google Chrome"
+echo "$globalScriptTitle $childScriptTitle Install Google Chrome"
 
 if [ -d "/Applications/Google Chrome.app" ]; then
     echo "Google Chrome Already installed"
@@ -159,16 +111,6 @@ else
     brew install google-chrome
 fi
 
-###################
-# Update Git Settings
-###################
 
-echo "MacOS Web Essentials: Git: Update Author Name and Email"
-git config --global user.name "$ufname $ulname"
-git config --global user.email "$uemail"
-
-echo "MacOS Web Essentials: Git: Use VS Code as Git Editor"
-git config --global core.editor "code --wait"
-
-echo "MacOS Web Essentials: Git: Set git default branch back to the original \"master\" branch. In case they tried to change it to main; which is silly."
-git config --global init.defaultbranch "master"
+# Shared Post Install
+source "${__dir}/shared.install.post.sh"

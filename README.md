@@ -10,6 +10,8 @@ We will use this during our first session to set up your:
 ## Step 1: Getting Started
 
 1. Download & Install [VS Code](https://code.visualstudio.com/download)
+    - Windows Users: Follow these Instructions<a href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode#install-vs-code-and-the-wsl-extension" target="VsCodeWithWSLSupport">Install VS Code and the WSL extension
+      </a>
 2. Download & Install [Google Chrome](https://www.google.com/chrome/)
 3. Download the [UCLAX-WEB1-Starter](https://github.com/uclax-web1-winter-2023/UCLAX-Web1-Starter/archive/refs/heads/master.zip) Resource
 4. Open **UCLAX-WEB1-Starter** in **VS Code**
@@ -26,7 +28,9 @@ We will use this during our first session to set up your:
 
 ## Step 3: Setup VS Code
 
-### Extensions
+### Install Remaning VS Code Extensions
+
+**VS Code** is a great app out of the box, but it truly shines when you add _User Defind Extensions_ that enhance it's capabilities. This will ensure your **VS Code** behaves like mine as well.
 
 1. In left sidebar, right click on the **UCLAX-Web1-Last-First** folder and choose the option to rename
 2. Rename this folder changing the **Last-First** to your **Lastname-Firstname** (e.g. UCLAX-Web1-Gohman-Mitch)
