@@ -20,11 +20,11 @@ We will use this during our first session to set up your:
 
 ### MacOS Set Up
 
-[macOs Setup Instructions](src/docs/macOs-Setup.md)
+<a href="./src/docs/macOs-Setup.md" target="macOsSpecificInstructions">macOs Setup Instructions</a>
 
 ### Windows Setup
 
-[Windows Setup Instructions](src/docs/Windows-Setup.md)
+<a href="./src/docs/Windows-Setup.md" target="winSpecificInstructions">Windows Setup Instructions</a>
 
 ## Step 3: Setup VS Code
 
