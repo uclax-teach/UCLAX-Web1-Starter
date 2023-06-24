@@ -7,7 +7,7 @@ We will use this during our first session to set up your:
 -   Computer
 -   Final project folder
 
-### MacOS Set Up
+### MacOS Setup
 
 <a href="./docs/macOs-Setup.md" target="macOsSpecificInstructions">macOs Setup Instructions</a>
 
