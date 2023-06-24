@@ -7,16 +7,41 @@ We will use this during our first session to set up your:
 -   Computer
 -   Final project folder
 
-## Instructions
+## Step 1: Getting Started
 
 1. Download & Install [VS Code](https://code.visualstudio.com/download)
-2. Download the [UCLAX-WEB1-Starter](https://github.com/uclax-web1-winter-2023/UCLAX-Web1-Starter/archive/refs/heads/master.zip) Resource
-3. Open **UCLAX-WEB1-Starter** in **VS Code**
+2. Download & Install [Google Chrome](https://www.google.com/chrome/)
+3. Download the [UCLAX-WEB1-Starter](https://github.com/uclax-web1-winter-2023/UCLAX-Web1-Starter/archive/refs/heads/master.zip) Resource
+4. Open **UCLAX-WEB1-Starter** in **VS Code**
 
-## MacOS Set Up
+## Step 2: Operating System Specific Instructions
+
+### MacOS Set Up
 
 [macOs Setup Instructions](src/docs/macOs-Setup.md)
 
-## Windows Setup
+### Windows Setup
 
 [Windows Setup Instructions](src/docs/Windows-Setup.md)
+
+## Step 3: Setup VS Code
+
+### Extensions
+
+1. In left sidebar, right click on the **UCLAX-Web1-Last-First** folder and choose the option to rename
+2. Rename this folder changing the **Last-First** to your **Lastname-Firstname** (e.g. UCLAX-Web1-Gohman-Mitch)
+3. Close out of **UCLAX-WEB1-Starter** in VS Code
+4. Locate the **UCLAX-Web1-Last-First** you just renamed in **VS Code** on your computer (e.g. wherever you downloaded it)
+    1. Move the **UCLAX-Web1-Last-First** out of the **UCLAX-WEB1-Starter** folder.
+    2. Open the **UCLAX-Web1-Last-First** you just renamed in VS Code
+5. Click on **VS Code** extensions in the left sidebar
+6. A new Left Sidebar will reveal the **Extensions Panel**
+7. In the upper right of the **Extensions Panel**, click the filter icon symbol
+8. Choose **Reccomended**
+9. Install all extensions under **Workspace Reccomended**
+
+## Step 4: Complete Setup
+
+Assuming you have completed all of the prior steps.
+
+1. Now that you have moved your **UCLAX-Web1-Last-First** folder, you can delete the **UCLAX-WEB1-Starter** folder. We only need your **UCLAX-Web1-Last-First** folder.
