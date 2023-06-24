@@ -34,7 +34,7 @@ The following is uncharted waters and best educated guess given my research.
 
 2. Then we should be able to run the following command: `bash ./src/scripts/win.install.sh` to install the rest of the applications needed for this course. This can take awhile, be ready to provide answers to prompts.
 
-## Windows Step 4:Install VS Code Workspace Extensions
+## Windows Step 4: Install VS Code Workspace Extensions
 
 **VS Code** is a great app out of the box, but it truly shines when you add _User Defind Extensions_ that enhance it's capabilities. This will ensure your **VS Code** behaves like mine as well.
 
