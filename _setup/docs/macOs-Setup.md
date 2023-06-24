@@ -1,10 +1,8 @@
-# System Setup: Uclax Web 1
+# System Setup: Uclax Web 1: macOs
 
 [Back to Main](../SETUP.md)
 
-## macOs Set Up
-
-### macOs Step 1: Getting Started
+## macOs Step 1: Getting Started
 
 1. Download & Install <a href="https://code.visualstudio.com/download" target="VSCodeDownload">VS Code</a>
 2. Download this [UCLAX-WEB1-Starter](https://github.com/uclax-web1-winter-2023/UCLAX-Web1-Starter/archive/refs/heads/master.zip) Resource
@@ -16,7 +14,7 @@
 1. Open **VS Code** terminal `Menu > Terminal > New Terminal`
 2. Run the following command: `bash ./_setup/scripts/macOs.install.sh` to install a series of applications needed for this course. This can take awhile, be ready to provide answers to prompts
 
-### macOs Step 3: Install VS Code Workspace Extensions
+## macOs Step 3: Install VS Code Workspace Extensions
 
 **VS Code** is a great app out of the box, but it truly shines when you add _User Defind Extensions_ that enhance it's capabilities. This will ensure your **VS Code** behaves like mine as well.
 

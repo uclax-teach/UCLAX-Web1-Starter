@@ -1,14 +1,12 @@
-# System Setup: Uclax Web 1
+# System Setup: Uclax Web 1: Windows
 
 [Back to Main](../SETUP.md)
-
-## Windows Set Up
 
 Unlike macOS and Linux (at least out of the box), Windows does not support bash/terminal. In order to get Windows to act more like macOS and Linux, we need to enable Windows Subsystem for Linux (WSL).
 
 > _Note: Because A). I do not own a Windows machine, and B). setting up a Virtual Windows OS on Apple M1/M2 chips is next to impossible, I have yet to test this setup. On the first day of class, my plan is to work with and screen record assisting a Windows user in setting up their system. I will then update these instructions and post that video_
 
-### Windows Step 1: Getting Started
+## Windows Step 1: Getting Started
 
 1. Follow only the instructions under the following heading <a href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode#install-vs-code-and-the-wsl-extension" target="VsCodeWithWSLSupport">Install VS Code and the WSL extension
    </a>. Ignore the rest (in other words, do not continue where it says _Update your Linux distribution_).
@@ -17,7 +15,7 @@ Unlike macOS and Linux (at least out of the box), Windows does not support bash/
     - Rename the word Starter **UCLAX-WEB1-Starter** to your **Lastname-First** (e.g. UCLAX-WEB1-Starter becomes UCLAX-WEB1-Gohman-Mitch)
     - Open **UCLAX-WEB1-lastname-First** folder in **VS Code**
 
-### Windows Step 2: Configure The Windows Subsystem for Linux (WSL)
+## Windows Step 2: Configure The Windows Subsystem for Linux (WSL)
 
 1. Complete only the **Install WSL command** step in the following instructions: <a href="https://learn.microsoft.com/en-us/windows/wsl/install" target="InstallWSL">Install Linux on Windows with WSL</a>
 2. Complete only steps below in the following instructions: <a href="https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password" target="InstallWSL">WSL Environment</a>
@@ -26,7 +24,7 @@ Unlike macOS and Linux (at least out of the box), Windows does not support bash/
 
 **Note: VS Code with WSL** Apparently windows has added a lot of support for WSL, which you may want to explore <a href="https://learn.microsoft.com/en-us/windows/wsl/setup/environment#use-visual-studio-code" target="UseWSL">here</a>.
 
-### Windows Step 3: Run installer script
+## Windows Step 3: Run installer script
 
 The following is uncharted waters and best educated guess given my research.
 
@@ -36,7 +34,7 @@ The following is uncharted waters and best educated guess given my research.
 
 2. Then we should be able to run the following command: `bash ./src/scripts/win.install.sh` to install the rest of the applications needed for this course. This can take awhile, be ready to provide answers to prompts.
 
-### Windows Step 4:Install VS Code Workspace Extensions
+## Windows Step 4:Install VS Code Workspace Extensions
 
 **VS Code** is a great app out of the box, but it truly shines when you add _User Defind Extensions_ that enhance it's capabilities. This will ensure your **VS Code** behaves like mine as well.
 
