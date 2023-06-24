@@ -13,7 +13,7 @@ We will use this during our first session to set up your:
     - Windows Users: Follow these Instructions<a href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode#install-vs-code-and-the-wsl-extension" target="VsCodeWithWSLSupport">Install VS Code and the WSL extension
       </a>
 2. Download & Install [Google Chrome](https://www.google.com/chrome/)
-3. Download the [UCLAX-WEB1-Starter](https://github.com/uclax-web1-winter-2023/UCLAX-Web1-Starter/archive/refs/heads/master.zip) Resource
+3. Download this [UCLAX-WEB1-Starter](https://github.com/uclax-web1-winter-2023/UCLAX-Web1-Starter/archive/refs/heads/master.zip) Repo Resource
 4. Open **UCLAX-WEB1-Starter** in **VS Code**
 
 ## Step 2: Operating System Specific Instructions
