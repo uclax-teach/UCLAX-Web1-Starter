@@ -4,7 +4,7 @@
 
 ## macOs Set Up
 
-## macOs Step 1: Getting Started
+### macOs Step 1: Getting Started
 
 1. Download & Install <a href="https://code.visualstudio.com/download" target="VSCodeDownload">VS Code</a>
 2. Download this [UCLAX-WEB1-Starter](https://github.com/uclax-web1-winter-2023/UCLAX-Web1-Starter/archive/refs/heads/master.zip) Resource
