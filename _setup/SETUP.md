@@ -14,10 +14,16 @@ We will use this during our first session to set up your:
     -   If something is unclear
     -   If something is taking more than 5-10 minutes to respond. Setup scripts in your terminal may take some time with no progress bar or little feedback. Often times, you just need to keep waiting for it to complete.
 
-### MacOS Setup
+### Part 1: Operating System Setup
+
+#### MacOS Setup
 
 <a href="./docs/macOs-Setup.md" target="macOsSpecificInstructions">macOs Setup Instructions</a>
 
-### Windows Setup
+#### Windows Setup
 
 <a href="./docs/Windows-Setup.md" target="winSpecificInstructions">Windows Setup Instructions</a>
+
+### Part 2: Part 2: Shared Setup (Operating System Agnostic)
+
+<a href="./docs/Shared-Setup.md" target="osAgnostic">Part 2: Shared Setup (Operating System Agnostic)</a>
