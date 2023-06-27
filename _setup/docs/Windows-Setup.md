@@ -24,15 +24,15 @@ Unlike macOS and Linux (at least out of the box), Windows does not support bash/
 
 **Note: VS Code with WSL** Apparently windows has added a lot of support for WSL, which you may want to explore <a href="https://learn.microsoft.com/en-us/windows/wsl/setup/environment#use-visual-studio-code" target="UseWSL">here</a>.
 
-## Windows Step 3: Run installer script
+## Windows Step 3: Open Project in VS Code and WSL
 
-The following is uncharted waters and best educated guess given my research.
+1. Go to VS Code (your **UCLAX-WEB1-lastname-First** folder should still be open)
+2. Press `Control + Shift + P` (to engage omni menu)
+3. Type and Choose `WSL: Reopen Folder in WSL` (This will open your project into your WSL Ubuntu instance, may take some time the first run)
+4. Open Terminal: **Menu > Terminal > New Terminal**
+5. Run the following command: `bash ./_setup/scripts//win.install.sh` to install the rest of the rest of the applications needed for this course.
 
-1. We need to open the WSL Terminal in VS Code to the **UCLAX-WEB1-lastname-First** folder.
-
-    > You can also access more VS Code WSL options by using the shortcut: _CTRL+SHIFT+P_ in VS Code to bring up the command palette. If you then type **WSL** you will see a list of the options available, allowing you to reopen the folder in a WSL session, specify which distribution you want to open in, and more.
-
-2. Then we should be able to run the following command: `bash ./src/scripts/win.install.sh` to install the rest of the applications needed for this course. This can take awhile, be ready to provide answers to prompts.
+_Note: This can take awhile, be ready to provide answers to prompts._
 
 ## Windows Step 4: Install VS Code Workspace Extensions
 
