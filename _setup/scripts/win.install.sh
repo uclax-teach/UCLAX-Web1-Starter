@@ -34,16 +34,3 @@ echo "$globalScriptTitle $childScriptTitle Install Oh My Zsh Icons/Fonts"
 apt install fonts-powerline -y
 echo "$globalScriptTitle $childScriptTitle Install Oh My Zsh Syntax Highlighting"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-
-# Install NVM, Node and NPM
-echo "$globalScriptTitle $childScriptTitle Install NVM, Node and NPM"
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-echo 'export NVM_DIR=~/.nvm' >> ~/.zshrc
-echo '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"' >> ~/.zshrc
-source ~/.zshrc
-nvm install 18.12.1
-nvm use 18.12.1
-nvm alias default 18.12.1
-
-# Shared Post Install
-source "${__dir}/shared.install.post.sh"

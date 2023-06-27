@@ -29,12 +29,23 @@ Unlike macOS and Linux (at least out of the box), Windows does not support bash/
 1. Open VS Code
 2. Click the blue double arrows in bottom left
 3. Start typing WSL, and choose the option to `WSL Connect`
-4. Once VS Code is connected to your Ubuntu instance, we can right-click on any file on the left, and choose `Open in Explorer`
+4. Once VS Code is connected to your Ubuntu instance, we can right-click on any file on the left, and choose `Reveal in Explorer`
 5. Move or Copy your **UCLAX-WEB1-lastname-First** to this directory
 6. Back in VS Code, choose File > Open Folder > and Select your **UCLAX-WEB1-lastname-First** folder
 7. Open Terminal: **Menu > Terminal > New Terminal**
-8. Run the following command: `bash ./_setup/scripts/win.install.sh` to install the rest of the rest of the applications needed for this course.
 
-_Note: This can take awhile, be ready to provide answers to prompts._
+## Windows Step 4: Install Apps for our Project
+
+1. Run the following command: `bash ./_setup/scripts/win.install.sh` to install the rest of the rest of the applications needed for this course.
+2. Choose File > Open Folder > and Select your **/home/username** folder
+3. Open `.zshrc` in left sidebar
+4. Change plugins section (around line 73) to include nvm as follows: `plugins=(git nvm)`
+5. Open new terminal **Menu > Terminal > New Terminal**
+6. In terminal, upper right, click on down caret and choose `Select Default Profile`
+7. In option window, choose `zsh`
+8. Open new terminal **Menu > Terminal > New Terminal**
+9. Run command: `bash ./_setup/scripts/win.nvm.install.sh`
+10. Choose File > Open Folder > and Select your **UCLAX-WEB1-lastname-First** folder
+11. Run command: `npm install`
 
 [Part 2: Shared Setup](./Shared-Setup.md)

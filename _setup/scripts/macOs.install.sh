@@ -93,6 +93,3 @@ else
     echo "Install Google Chrome"
     brew install google-chrome
 fi
-
-# Shared Post Install
-source "${__dir}/shared.install.post.sh"
