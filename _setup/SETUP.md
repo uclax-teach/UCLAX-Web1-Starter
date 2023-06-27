@@ -27,3 +27,7 @@ We will use this during our first session to set up your:
 ### Part 2: Part 2: Shared Setup (Operating System Agnostic)
 
 <a href="./docs/Shared-Setup.md" target="osAgnostic">Part 2: Shared Setup (Operating System Agnostic)</a>
+
+## Admin Mitch
+
+<a href="./docs/Windows-Setup-VM-Paralells.md" target="osAgnostic">Mitch Notes on VM for Apple M1 and Parallells</a>
