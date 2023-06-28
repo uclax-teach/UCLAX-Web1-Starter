@@ -24,7 +24,7 @@ We will use this during our first session to set up your:
 
 <a href="./docs/Windows-Setup.md" target="winSpecificInstructions">Windows Setup Instructions</a>
 
-### Part 2: Part 2: Shared Setup (Operating System Agnostic)
+### Part 2: Shared Setup (Operating System Agnostic)
 
 <a href="./docs/Shared-Setup.md" target="osAgnostic">Part 2: Shared Setup (Operating System Agnostic)</a>
 
