@@ -1,0 +1,24 @@
+{
+	"React Functional Component": {
+		"scope": "",
+		"prefix": "recomp",
+		"body": [
+			"import styled from 'styled-components';",
+			"",
+			"const ${1:Component} = () => {",
+				"\treturn (",
+					"\t\t<${1:Component}Styled className='${1:Component}'>",
+						"\t\t\t${1:Component} ${2}",
+					"\t\t</${1:Component}Styled>",
+				"\t);",
+			"}",
+			"",
+			"export default ${1:Component};",
+			"",
+			"const ${1:Component}Styled = styled.div`",
+			"\t${0}",
+			"`;",
+		],
+		"description": "React Functional Component"
+	}
+}
