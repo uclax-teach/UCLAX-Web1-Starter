@@ -9,7 +9,8 @@
     "editor.accessibilitySupport": "off",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "[yaml]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.tabSize": 4
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
@@ -77,5 +78,5 @@
         "watch": false
     },
     "window.commandCenter": false,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 0
 }
