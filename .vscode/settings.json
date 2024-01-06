@@ -28,7 +28,6 @@
     "javascript.suggest.autoImports": false,
     "javascript.updateImportsOnFileMove.enabled": "never",
     "typescript.suggest.autoImports": false,
-    "dashboard.projectData": null,
     "workbench.editor.enablePreview": false,
     "workbench.startupEditor": "none",
     "workbench.layoutControl.enabled": false,
@@ -70,8 +69,7 @@
     "terminal.integrated.env.osx": {},
     "console-ninja.showWhatsNew": false,
     "console-ninja.toolsToEnableSupportAutomaticallyFor": {
-        "live-server": true,
-        "live-preview": true
+        "live-server": true
     },
     "jest.autoRun": {
         "watch": false
