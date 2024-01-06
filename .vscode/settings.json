@@ -30,7 +30,6 @@
     "typescript.suggest.autoImports": false,
     "dashboard.projectData": null,
     "workbench.editor.enablePreview": false,
-    "workbench.editor.untitled.hint": "hidden",
     "workbench.startupEditor": "none",
     "workbench.layoutControl.enabled": false,
     "explorer.confirmDragAndDrop": false,
@@ -78,5 +77,6 @@
         "watch": false
     },
     "window.commandCenter": false,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 1,
+    "workbench.editor.empty.hint": "hidden"
 }
