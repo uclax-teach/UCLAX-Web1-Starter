@@ -26,10 +26,9 @@ SSH keys are a secure way to connect to your Github account without having to co
 1. After logging into your Github account, click your **profile icon** upper right
 2. Click **Settings**
 3. In left sidebar, click **SSH and GPG Keys**
-4. In new browser tabs/windows:
-    1. <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys" target="sshCheck">Check to see if you already have SSH installed</a>
-    2. if SSH is not installed, <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="sshSetup">Add SSH keys</a> to your system
-5. <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account" target="sshAddToGithub">Add your SSH Key to Github</a> back in the original tab/window.
+    - <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=mac" target="sshSetup">Add SSH Keys to **MacOS**</a>
+    - <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux" target="sshSetup">Add SSH Keys to **Windows WSL (Linux)**</a>
+4. <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account" target="sshAddToGithub">Add your SSH Key to Github</a> back in the original tab/window.
 
 ### Set default repo branch to master
 
