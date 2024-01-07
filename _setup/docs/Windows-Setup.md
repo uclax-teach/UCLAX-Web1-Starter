@@ -11,7 +11,7 @@ Unlike macOS and Linux (at least out of the box), Windows does not support bash/
 2. Install <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack" target="vscodeRemoteDevExt">VS Code Remote Development</a> Extension
 3. Instal <a href="https://www.microsoft.com/store/apps/9n0dx20hk701" target="windowsTerminal">Windows Terminal</a> from the store
 4. Download & Install <a href="https://www.google.com/chrome/" target="googleChrome">Google Chrome</a>
-5. Download this [UCLAX-WEB1-Starter](https://github.com/uclax-web1-winter-2023/UCLAX-Web1-Starter/archive/refs/heads/master.zip) Resource
+5. Download this [UCLAX-WEB1-Starter](https://github.com/uclax-teach/UCLAX-Web1-Starter/archive/refs/heads/master.zip) Resource
     - Rename the word Starter **UCLAX-WEB1-Starter** to your **Lastname-First** (e.g. UCLAX-WEB1-Starter becomes UCLAX-WEB1-Gohman-Mitch)
     - Open **UCLAX-WEB1-lastname-First** folder in **VS Code**
 

@@ -5,7 +5,7 @@
 ## macOs Step 1: Getting Started
 
 1. Download & Install <a href="https://code.visualstudio.com/download" target="VSCodeDownload">VS Code</a>
-2. Download this [UCLAX-WEB1-Starter](https://github.com/uclax-web1-winter-2023/UCLAX-Web1-Starter/archive/refs/heads/master.zip) Resource
+2. Download this [UCLAX-WEB1-Starter](https://github.com/uclax-teach/UCLAX-Web1-Starter/archive/refs/heads/master.zip) Resource
     - Rename the word Starter **UCLAX-WEB1-Starter** to your **Lastname-First** (e.g. UCLAX-WEB1-Starter becomes UCLAX-WEB1-Gohman-Mitch)
     - Open **UCLAX-WEB1-lastname-First** in **VS Code**
 
