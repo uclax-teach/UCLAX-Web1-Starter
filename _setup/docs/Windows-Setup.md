@@ -40,12 +40,15 @@ Unlike macOS and Linux (at least out of the box), Windows does not support bash/
 2. Choose File > Open Folder > and Select your **/home/username** folder
 3. Open `.zshrc` in left sidebar
 4. Change plugins section (around line 73) to include nvm as follows: `plugins=(git nvm)`
-5. Open new terminal **Menu > Terminal > New Terminal**
-6. In terminal, upper right, click on down caret and choose `Select Default Profile`
-7. In option window, choose `zsh`
-8. Open new terminal **Menu > Terminal > New Terminal**
-9. Run command: `bash ./_setup/scripts/win.nvm.install.sh`
-10. Choose File > Open Folder > and Select your **UCLAX-WEB1-lastname-First** folder
-11. Run command: `npm install`
+5. Choose File > Open Folder > and Select your **UCLAX-WEB1-lastname-First** folder
+6. Open new terminal **Menu > Terminal > New Terminal**
+7. In terminal, upper right, click on down caret and choose `Select Default Profile`
+8. In option window, choose `zsh`
+9. Open new terminal **Menu > Terminal > New Terminal**
+10. Run command: `bash ./_setup/scripts/win.nvm.install.sh`
+11. Run Command: `nvm install v20.9.0`
+12. Run Command: `nvm use v20.9.0`
+13. Run Command: `nvm alias default v20.9.0`
+14. Run command: `npm install`
 
 [Part 2: Shared Setup](./Shared-Setup.md)
