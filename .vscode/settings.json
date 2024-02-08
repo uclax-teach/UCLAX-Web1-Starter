@@ -76,5 +76,7 @@
     },
     "window.commandCenter": false,
     "window.zoomLevel": 1,
-    "workbench.editor.empty.hint": "hidden"
+    "workbench.editor.empty.hint": "hidden",
+    "scm.showIncomingChanges": "never",
+    "scm.showOutgoingChanges": "never"
 }
